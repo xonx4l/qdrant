@@ -159,6 +159,7 @@ impl From<raft::StateRole> for StateRole {
 pub struct MessageSendErrors {
     pub count: usize,
     pub latest_error: Option<String>,
+    pub last_seen: DateTime<Utc>,
 }
 
 /// Description of enabled cluster
